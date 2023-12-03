@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.saprbarbyme.Controller.PreProcessorController">
+    <TableView fx:id="tableView" layoutX="200.0" layoutY="50.0" prefHeight="300.0" prefWidth="500.0">
+        <columns>
+            <TableColumn fx:id="lengthColumn" prefWidth="125.0" text="Length" />
+            <TableColumn fx:id="squareColumn" prefWidth="125.0" text="Square" />
+            <TableColumn fx:id="elasticModuleColumn" prefWidth="125.0" text="Elastic Module" />
+            <TableColumn fx:id="voltageColumn" prefWidth="125.0" text="Voltage" />
+        </columns>
+    </TableView>
+    <VBox layoutX="40.0" layoutY="50.0" prefHeight="100.0" prefWidth="100.0" spacing="5.0">
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Length" />
+        <TextField fx:id="lengthField" />
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Square" />
+        <TextField fx:id="squareField" />
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Elastic Module" />
+        <TextField fx:id="elasticModuleField" />
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Voltage" />
+        <TextField fx:id="voltageField" />
+        <Button mnemonicParsing="false" onAction="#addBar" prefHeight="25.0" prefWidth="200.0" text="Submit" />
+    </VBox>
+</AnchorPane>
